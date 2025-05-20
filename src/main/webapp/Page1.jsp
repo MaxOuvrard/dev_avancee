@@ -1,4 +1,4 @@
-<%@ page import="com.example.dev_avancee.UserBean" %><%--
+<%@ page import="com.example.dev_avancee3.UserBean" %><%--
   Created by IntelliJ IDEA.
   User: maxen
   Date: 25/03/2025
@@ -18,10 +18,14 @@
         return;
     }
 %>
-<a href="logoutServlet">LogOut</a>
+<a href="logoutServlet.do">LogOut</a>
  <h1>Welcome, <%= user.getNom() %></h1>
-<form action="updateAttributesServlet" method="post">
-    <label></label>
+<form action="updateAttributesServlet.do" method="post">
+    <label for="attribut2">Attribut2</label>
+    <input type="text" id="attribut2" name="attribut2" required>
+    <br/>
+    <label for="attribut3">Attribut3</label>
+    <input type="text" id="attribut3" name="attribut3" required>
 </form>
 </body>
 </html>

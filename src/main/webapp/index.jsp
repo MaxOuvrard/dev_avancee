@@ -8,6 +8,6 @@
 <h1><%= "Bienvenue !!" %>
 </h1>
 <br/>
-<a href="debut_servlet">Vous connectez</a>
+<a href="debut_servlet.do">Vous connectez</a>
 </body>
 </html>

@@ -11,7 +11,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="loginServlet" method="post">
+    <form action="loginServlet.do" method="post">
         <label for="username">Login : </label>
         <input type="text" id="username" name="username" required>
         <br>
