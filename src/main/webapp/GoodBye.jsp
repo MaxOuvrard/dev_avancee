@@ -1,4 +1,4 @@
-<%--
+<%@ page import="com.example.dev_avancee4.UserBean" %><%--
   Created by IntelliJ IDEA.
   User: maxen
   Date: 25/03/2025
@@ -11,7 +11,18 @@
     <title>Goodbye</title>
 </head>
 <body>
-    <h1>Au revoir</h1>
+<%
+    String goodbye = "";
+    if (request.getSession(false) != null) {
+    UserBean user = (UserBean) request.getSession().getAttribute("user");
+    if (user != null) {
+        goodbye = "GoodBye " + user.getNom();
+    } else {
+        goodbye = "GoodBye";
+    }
+}
+%>
+<h1><%= goodbye %></h1>
 <p> Merci de votre visite</p>
 </body>
 </html>
