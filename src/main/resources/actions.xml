@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action name="updateAttributesServlet.do" class="action.ActionUn"/>
+    <action name="debut_servlet.do" class="action.ActionDebut"/>
+    <action name="loginServlet.do" class="action.LoginAction"/>
+    <action name="logoutServlet.do" class="action.LogoutAction"/>
+</actions>
