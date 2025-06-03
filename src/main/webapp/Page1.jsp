@@ -22,10 +22,10 @@
 <h1>Welcome, <%= user.getNom() %></h1>
 <form action="updateAttributesServlet.do" method="post">
     <label for="attribut2">Attribut2</label>
-    <input type="text" id="attribut2" name="attribut2" value="<%= user.getAttribut1() %>" required>
+    <input type="text" id="attribut2" name="attribut2" value="<%= user.getAttribut1() %>">
     <br/>
     <label for="attribut3">Attribut3</label>
-    <input type="text" id="attribut3" name="attribut3" value="<%= user.getAttribut2()%>" required>
+    <input type="text" id="attribut3" name="attribut3" value="<%= user.getAttribut2()%>">
     <br/>
     <input type="submit" value="Modifier">
 </form>
